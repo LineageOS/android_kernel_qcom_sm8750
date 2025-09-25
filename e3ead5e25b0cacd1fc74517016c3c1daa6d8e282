@@ -16,6 +16,23 @@
       "message": "Chain boots on dodge.",
       "revId": "e3ead5e25b0cacd1fc74517016c3c1daa6d8e282",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "658e5bd9_50328907",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-09-25T17:25:04Z",
+      "side": 1,
+      "message": "Also fine on erhai.",
+      "revId": "e3ead5e25b0cacd1fc74517016c3c1daa6d8e282",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
