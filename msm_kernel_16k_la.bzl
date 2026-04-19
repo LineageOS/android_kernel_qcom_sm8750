@@ -1,5 +1,5 @@
 load(
-    "//build:msm_kernel_extensions.bzl",
+    ":msm_kernel_extensions.bzl",
     "define_extras",
     "get_16K_vendor_ramdisk_binaries",
     "get_build_config_fragments",
