@@ -1,5 +1,5 @@
 load(
-    "//build:msm_kernel_extensions.bzl",
+    ":msm_kernel_extensions.bzl",
     "define_extras",
     "get_build_config_fragments",
     "get_dtb_list",
@@ -206,7 +206,7 @@ def _define_kernel_dist(target, msm_target, variant):
     if "allyes" in target:
         msm_dist_targets += [
             ":{}_dummy_files".format(target),
-            "//msm-kernel:{}_super_image".format(le_target + "_perf"),
+            ":{}_super_image".format(le_target + "_perf"),
         ]
 
     copy_to_dist_dir(
