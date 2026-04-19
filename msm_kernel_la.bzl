@@ -48,7 +48,7 @@ def _define_build_config(
 
     gen_config_command = """
       cat << 'EOF' > "$@"
-KERNEL_DIR="msm-kernel"
+KERNEL_DIR="vendor/qcom/kernel"
 VARIANTS=(%s)
 MSM_ARCH=%s
 VARIANT=%s
