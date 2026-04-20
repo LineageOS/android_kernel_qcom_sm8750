@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b36e1f40_7632c739",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-04-20T13:34:00Z",
+      "side": 1,
+      "message": "was here https://review.lineageos.org/c/LineageOS/android_kernel_qcom_sm8750/+/469768, just ignored.",
+      "revId": "1535514a574bec8a0fd4f276f9755157e245121d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
