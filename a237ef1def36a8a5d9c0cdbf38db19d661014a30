@@ -16,6 +16,24 @@
       "message": "Send it upstream, please.",
       "revId": "a237ef1def36a8a5d9c0cdbf38db19d661014a30",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5377bc69_2c37203d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-04-20T20:13:36Z",
+      "side": 1,
+      "message": "neither of us work at qcom and these configs aren\u0027t in aosp ^.^",
+      "parentUuid": "8f8ab2b7_3f0ea2b3",
+      "revId": "a237ef1def36a8a5d9c0cdbf38db19d661014a30",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
