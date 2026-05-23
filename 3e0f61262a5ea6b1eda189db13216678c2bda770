@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "15bcdd82_2447b9d5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-05-23T05:30:13Z",
+      "side": 1,
+      "message": "users of this kernel can always change it themselves in their device specific version.",
+      "revId": "3e0f61262a5ea6b1eda189db13216678c2bda770",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
