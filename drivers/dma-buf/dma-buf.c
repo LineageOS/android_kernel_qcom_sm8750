@@ -706,6 +706,16 @@ void put_dmabuf_info(struct task_dma_buf_info *dmabuf_info)
 	kfree(dmabuf_info);
 }
 
+#define COUNT_DMABUF_FDS(file_lookup_func) ({ \
+	size_t count = 0; \
+	for (unsigned int n = 0; n < files_fdtable(current->files)->max_fds; ++n) { \
+		struct file *file = file_lookup_func(current->files, n); \
+		if (file && is_dma_buf_file(file)) \
+			++count; \
+	} \
+	count; \
+})
+
 /*
  * begin_new_exec is the starting point for the execution of a new program. It involves unsharing
  * files_struct (possibly creating a new one), and installs a new mm_struct. Since this modifies the
@@ -731,11 +741,10 @@ int dma_buf_begin_new_exec(struct files_struct *old_files)
 	if (my_files) {
 		size_t num_dmabuf_fds, num_dmabuf_fds_check;
 		unsigned int retries = 0;
-		unsigned int max_fds;
 
 		/* Attempt to count dmabuf FDs locklessly before allocating */
 		rcu_read_lock();
-		num_dmabuf_fds = COUNT_DMABUF_FDS(current->files, files_lookup_fd_rcu);
+		num_dmabuf_fds = COUNT_DMABUF_FDS(files_lookup_fd_rcu);
 		rcu_read_unlock();
 retry:
 		if (!task_dmabuf_records_preload(num_dmabuf_fds))
@@ -744,7 +753,7 @@ retry:
 		spin_lock(&my_files->file_lock);
 
 		/* First make sure we have enough preallocated records */
-		num_dmabuf_fds_check = COUNT_DMABUF_FDS(current->files, files_lookup_fd_locked);
+		num_dmabuf_fds_check = COUNT_DMABUF_FDS(files_lookup_fd_locked);
 
 		if (num_dmabuf_fds_check > num_dmabuf_fds) {
 			spin_unlock(&my_files->file_lock);
@@ -760,8 +769,7 @@ retry:
 			goto retry;
 		}
 
-		max_fds = files_fdtable(my_files)->max_fds;
-		for (unsigned int n = 0; n < max_fds; n++) {
+		for (unsigned int n = 0; n < files_fdtable(my_files)->max_fds; n++) {
 			struct file *file = files_lookup_fd_locked(my_files, n);
 			int err;
 
@@ -769,7 +777,7 @@ retry:
 				continue;
 
 			err = __dma_buf_account_task(file->private_data, new_dmabuf_info, false);
-			if (err) {
+			if (err)
 				pr_err("dmabuf accounting failed during begin_new_exec, err %d\n",
 				       err);
 				continue;
@@ -791,7 +799,7 @@ retry:
 			put_dmabuf_info(my_files->dmabuf_info);
 
 		/* Finally swap over to the new dmabuf info */
-		get_dmabuf_info(new_dmabuf_info);
+		refcount_inc(&new_dmabuf_info->refcnt);
 		my_files->dmabuf_info = new_dmabuf_info;
 		spin_unlock(&my_files->file_lock);
 
