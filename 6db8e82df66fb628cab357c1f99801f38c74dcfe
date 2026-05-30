@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b7c4b736_b3655157",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-05-30T10:29:01Z",
+      "side": 1,
+      "message": "I have skipped this: https://android.googlesource.com/kernel/common/+/0fda873092b541bb5a9b87d728a2429f863f8cfa",
+      "revId": "6db8e82df66fb628cab357c1f99801f38c74dcfe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
