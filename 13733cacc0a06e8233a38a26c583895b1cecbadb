@@ -87,6 +87,23 @@
       "message": "already there",
       "revId": "13733cacc0a06e8233a38a26c583895b1cecbadb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b2e7b822_afa1d738",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-06-29T20:37:34Z",
+      "side": 1,
+      "message": "Ack, it\u0027s there: https://github.com/LineageOS/android_kernel_qcom_sm8750/commit/9aeacf4a93ffbc09508b5a6b0753284aa61cf2e9",
+      "revId": "13733cacc0a06e8233a38a26c583895b1cecbadb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
