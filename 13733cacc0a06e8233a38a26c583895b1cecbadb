@@ -16,6 +16,24 @@
       "message": "You missed arch/arm64/configs/gki_defconfig",
       "revId": "13733cacc0a06e8233a38a26c583895b1cecbadb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1b3a618c_0e07fdf1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-06-29T20:31:01Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_kernel_qcom_sm8650/+/492487 - look at mikes",
+      "parentUuid": "fc813fab_9a81876c",
+      "revId": "13733cacc0a06e8233a38a26c583895b1cecbadb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
