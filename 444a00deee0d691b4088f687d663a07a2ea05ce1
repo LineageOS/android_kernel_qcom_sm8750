@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "790dc0b0_0ba21c92",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20370
+      },
+      "writtenOn": "2026-08-04T20:59:13Z",
+      "side": 1,
+      "message": "Series boots fine on pdx257 with LineageOS 23.2",
+      "revId": "444a00deee0d691b4088f687d663a07a2ea05ce1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
