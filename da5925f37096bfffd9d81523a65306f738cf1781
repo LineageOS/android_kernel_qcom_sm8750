@@ -34,6 +34,41 @@
       "parentUuid": "db8cebcf_f9fb185b",
       "revId": "da5925f37096bfffd9d81523a65306f738cf1781",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77fda2fb_481bbfd3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-07T14:12:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f1f120e7_cf614a8c",
+      "revId": "da5925f37096bfffd9d81523a65306f738cf1781",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8620c0ba_cb0a9532",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-07T14:12:59Z",
+      "side": 1,
+      "message": "You forgot to keep \"Conflicts\". Please do so in the next merges for easy tracking.",
+      "revId": "da5925f37096bfffd9d81523a65306f738cf1781",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
